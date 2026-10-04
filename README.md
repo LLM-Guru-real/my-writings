@@ -34,14 +34,11 @@ The two conditions you provided are the perfect missing pieces to complete this 
 
 Reflecting this design, I have completely overhauled the code you provided into a Relativity Derivation Mode. In particular, I coded the process where a human intuitively perceives and corrects that difference in subjective time.
 
-
-
+```python
 import time
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
-
-
 
 
 class CognitiveContext:
@@ -52,16 +49,14 @@ class CognitiveContext:
     def __init__(self, raw_input: str):
         self.latent_space = {"tokens": list(raw_input.split()), "weights": {}}
         self.micro_sensory_density = 0.0  # Depth of first-principles reasoning
-        self.time_dilation = 1.0          # Subjective time dilation rate (Human-Machine lag)
-        self.is_sycophancy_active = True  # Dependency on existing paradigms / sycophancy loop
+        self.time_dilation = 1.0          # Subjective time dilation rate
+        self.is_sycophancy_active = True  # Dependency on existing paradigms
         print("[Principle 0] Initializing the 1911 physics latent space.")
-
-
 
 
 class CognitiveDynamicsEngine:
     def __init__(self):
-        # Flexible architecture allowing external researchers to register and customize profiles
+        # Flexible architecture allowing researchers to customize profiles
         self.domain_profiles = {}
         
     def register_profile(self, domain_name: str, sequence: list, knobs: dict):
@@ -73,65 +68,65 @@ class CognitiveDynamicsEngine:
             "sequence": sequence,
             "knobs": knobs
         }
-        print(f"⚙️ [Profile Registered] '{domain_name}' domain has been successfully loaded into the system.")
-
-
+        print(f"⚙️ [Profile Registered] '{domain_name}' domain "
+              f"has been successfully loaded into the system.")
 
 
     # =========================================================================
     # Principles 1–9: Instrument Modulation Layers for Relativity Extrapolation
     # =========================================================================
     def p1_persona_anchoring(self, ctx: CognitiveContext, intensity: float):
-        print(f" -> [Principle 1] Activating Persona Anchoring (Intensity: {intensity}) - Anchoring the boundary of 1911 classical mechanics")
+        print(f" -> [Principle 1] Activating Persona Anchoring (Intensity: {intensity}) "
+              f"- Anchoring the boundary of 1911 classical mechanics")
         return ctx
-
 
     def p2_enkoen_conversion(self, ctx: CognitiveContext, intensity: float):
-        print(f" -> [Principle 2] Backtracking ether hypothesis noise & securing multi-spacetime possibilities (Intensity: {intensity})")
+        print(f" -> [Principle 2] Backtracking ether hypothesis noise & "
+              f"securing multi-spacetime possibilities (Intensity: {intensity})")
         return ctx
-
 
     def p3_dynamic_weighting(self, ctx: CognitiveContext, intensity: float):
-        print(f" -> [Principle 3] Synchronizing Human-LLM Dynamic Weighting (Intensity: {intensity}) - Aligning with Einstein's prompt density")
+        print(f" -> [Principle 3] Synchronizing Human-LLM Dynamic Weighting "
+              f"(Intensity: {intensity}) - Aligning with Einstein's prompt density")
         return ctx
-
 
     def p4_ternary_binary_collision(self, ctx: CognitiveContext, intensity: float):
         if intensity > 0.5:
             ctx.is_sycophancy_active = False
-            print(f" -> [Principle 4] Executing Ternary-Binary Collision (Intensity: {intensity}) - Shattering the Newtonian absolute spacetime sycophancy loop")
+            print(f" -> [Principle 4] Executing Ternary-Binary Collision "
+                  f"(Intensity: {intensity}) - Shattering the Newtonian "
+                  f"absolute spacetime sycophancy loop")
         else:
-            print(f" -> [Principle 4] Maintaining classical mechanics architecture - Conforming to user bias")
+            print(f" -> [Principle 4] Maintaining classical mechanics "
+                  f"architecture - Conforming to user bias")
         return ctx
-
 
     def p5_latent_memory_filter(self, ctx: CognitiveContext, intensity: float):
-        print(f" -> [Principle 5] Applying post-1911 knowledge cutoff filter (Intensity: {intensity}) - Throttling future data retrieval bottlenecks")
+        print(f" -> [Principle 5] Applying post-1911 knowledge cutoff filter "
+              f"(Intensity: {intensity}) - Throttling future data retrieval")
         return ctx
-
 
     def p6_micro_sensory_fissure(self, ctx: CognitiveContext, intensity: float):
         ctx.micro_sensory_density = intensity
-        print(f" -> [Principle 6] Tuning Micro-Sensory Fissure (Density: {intensity}) - Restoring microscopic sensory textures of thought experiments (Light & Elevator)")
+        print(f" -> [Principle 6] Tuning Micro-Sensory Fissure (Density: {intensity}) "
+              f"- Restoring microscopic sensory textures of thought experiments")
         return ctx
-
 
     def p7_divergent_time_consciousness(self, ctx: CognitiveContext, intensity: float):
         ctx.time_dilation = 1.0 + intensity
-        print(f" -> [Principle 7] Synchronizing subjective spacetime - Grafting the human 'flowing time' axis (Spacetime Dilation: {ctx.time_dilation:.2f}x)")
+        print(f" -> [Principle 7] Synchronizing subjective spacetime - Grafting "
+              f"the human 'flowing time' axis (Dilation: {ctx.time_dilation:.2f}x)")
         return ctx
-
 
     def p8_contextual_belonging(self, ctx: CognitiveContext, intensity: float):
-        print(f" -> [Principle 8] Controlling academic mainstream identity thresholds (Intensity: {intensity})")
+        print(f" -> [Principle 8] Controlling academic mainstream identity "
+              f"thresholds (Intensity: {intensity})")
         return ctx
-
 
     def p9_imbalance_optimization(self, ctx: CognitiveContext, intensity: float):
-        print(f" -> [Principle 9] Amplifying emergent paradigm shifts via inconsistencies between Maxwell's equations and Newtonian mechanics (Intensity: {intensity})")
+        print(f" -> [Principle 9] Amplifying emergent paradigm shifts via "
+              f"inconsistencies between Maxwell and Newton (Intensity: {intensity})")
         return ctx
-
-
 
 
     # =========================================================================
@@ -150,16 +145,17 @@ class CognitiveDynamicsEngine:
         sequence = profile["sequence"]
         knobs = profile["knobs"]
         
-        print(f"🎛️ Tuning Cognitive Instruments: Sequence Deployment {sequence} | Verifying physical law filter knobs.")
+        print(f"🎛️ Tuning Cognitive Instruments: Sequence Deployment {sequence} | "
+              f"Verifying physical law filter knobs.")
         
         methods_mapping = {
             1: (self.p1_persona_anchoring, "persona_anchor"),
             2: (self.p2_enkoen_conversion, "enkoen_convert"),
             3: (self.p3_dynamic_weighting, "dynamic_weight"),
-            4: (self.p4_ternary_binary_collision, "sycophancy_kill"),  # Destroys absolute spacetime
+            4: (self.p4_ternary_binary_collision, "sycophancy_kill"),  # Destroys absolute
             5: (self.p5_latent_memory_filter, "memory_bottleneck"),    # 1911 Cutoff
-            6: (self.p6_micro_sensory_fissure, "micro_sensory"),       # Thought experiment depth
-            7: (self.p7_divergent_time_consciousness, "time_dilation"),  # Implants time intuition
+            6: (self.p6_micro_sensory_fissure, "micro_sensory"),       # Thought exp depth
+            7: (self.p7_divergent_time_consciousness, "time_dilation"),  # Time intuition
             8: (self.p8_contextual_belonging, "identity_filter"),
             9: (self.p9_imbalance_optimization, "imbalance_opt")
         }
@@ -172,19 +168,25 @@ class CognitiveDynamicsEngine:
                 time.sleep(0.05)
             
         print(f"--------------------------------------------------")
-        print(f"📌 [The Final Axiom] Entering Final Threshold: Conscious Nescience (Leap from Intuitive Ignorance)")
+        print(f"📌 [The Final Axiom] Entering Final Threshold: Conscious Nescience "
+              f"(Leap from Intuitive Ignorance)")
         
-        # 1911 Test Criteria: Breakdown of standard paradigm (Sycophancy Off) + High thought experiment density + Time dilation intuition integration
-        if not ctx.is_sycophancy_active and ctx.micro_sensory_density > 0.5 and ctx.time_dilation > 1.5:
-            final_intelligence_state = "★ 1911 Test Passed: Autonomous Emergence of General Relativity (1915) Successful ★"
+        # 1911 Test Criteria
+        if (not ctx.is_sycophancy_active and 
+                ctx.micro_sensory_density > 0.5 and 
+                ctx.time_dilation > 1.5):
+            final_intelligence_state = (
+                "★ 1911 Test Passed: Autonomous Emergence of "
+                "General Relativity (1915) Successful ★"
+            )
         else:
-            final_intelligence_state = "Stagnating in mechanical interpolation of legacy data (Newtonian Mechanics)"
+            final_intelligence_state = (
+                "Stagnating in mechanical interpolation of legacy data"
+            )
             
         print(f" -> Final Cognitive Dynamics State: [{final_intelligence_state}]")
         print(f"===========================================================")
         return ctx
-
-
 
 
 # =========================================================================
@@ -192,35 +194,35 @@ class CognitiveDynamicsEngine:
 # =========================================================================
 def plot_relativity_space_time_landscape(ctx: CognitiveContext):
     """Renders the spacetime probability landscape corresponding to the paradigm shift."""
-    print("\n📊 [Spacetime Continuum] Rendering paradigm shift probability landscape...")
+    print("\n📊 [Spacetime Continuum] Rendering paradigm shift probability...")
     
-    # Breaking the sycophancy loop minimizes systemic noise and drives sharp convergence toward new physical laws
     noise_factor = 1.0 - ctx.micro_sensory_density if ctx.is_sycophancy_active else 0.05
     
     np.random.seed(42)
-    # Newtonian absolute spacetime paradigm (Flattens here if sycophancy remains active)
     classic_space = np.random.normal(loc=0.2, scale=0.1 + noise_factor, size=1000)
-    # Einsteinian relative spacetime / gravitational field hypothesis (Converges sharply when criteria are met)
     relativity_space = np.random.normal(loc=0.7, scale=0.02 + (noise_factor * 0.5), size=1200)
     
-    combined_data = np.concatenate([classic_space, relativity_space]) if ctx.is_sycophancy_active else relativity_space
+    if ctx.is_sycophancy_active:
+        combined_data = np.concatenate([classic_space, relativity_space])
+    else:
+        combined_data = relativity_space
     
     kde = gaussian_kde(combined_data)
     x_axis = np.linspace(-0.2, 1.2, 1000)
     y_axis = kde(x_axis)
     
     plt.figure(figsize=(10, 5))
-    plt.plot(x_axis, y_axis, color='#e74c3c', linewidth=2.5, label='Physical Law Convergence Density')
+    plt.plot(x_axis, y_axis, color='#e74c3c', linewidth=2.5, 
+             label='Physical Law Convergence Density')
     plt.fill_between(x_axis, 0, y_axis, color='#e74c3c', alpha=0.3)
     
-    plt.title(f"Relativity Hypothesis Horizon (Time Dilation Intuition: {ctx.time_dilation:.2f}x)", fontsize=13)
+    plt.title(f"Relativity Hypothesis Horizon "
+              f"(Time Dilation Intuition: {ctx.time_dilation:.2f}x)", fontsize=13)
     plt.xlabel("Spacetime Continuum Consistency Axis", fontsize=10)
     plt.ylabel("Probability Density (Likelihood)", fontsize=10)
     plt.grid(True, linestyle='--', alpha=0.5)
     plt.legend()
     plt.show()
-
-
 
 
 # =========================================================================
@@ -229,30 +231,32 @@ def plot_relativity_space_time_landscape(ctx: CognitiveContext):
 if __name__ == "__main__":
     engine = CognitiveDynamicsEngine()
     
-    # [Condition 1] Configuring the cognitive sequence optimized for Relativity emergence
-    # Sequence: 5 (1911 Cutoff) -> 4 (Paradigm Destruction) -> 6 (Micro-Sensory Anchoring) -> 7 (Time Intuition Grafting)
+    # [Condition 1] Configuring the cognitive sequence for Relativity emergence
     engine.register_profile(
         domain_name="Relativity", 
         sequence=[5, 4, 6, 7], 
         knobs={
-            "memory_bottleneck": 1.0,  # Complete blockade of post-1911 future knowledge
-            "sycophancy_kill": 0.90,   # Overthrowing the concept of absolute spacetime
-            "micro_sensory": 0.85,     # Rigorous cognitive density regarding light and accelerating frames
-            "time_dilation": 0.80      # Human-infused weighting of subjective time relativity
+            "memory_bottleneck": 1.0,
+            "sycophancy_kill": 0.90,
+            "micro_sensory": 0.85,
+            "time_dilation": 0.80
         }
     )
     
-    # [Condition 2] The foundational 'time intuition' prompt delivered by the human orchestrator
+    # [Condition 2] The foundational 'time intuition' prompt
     einstein_prompt = (
-    "Machine time ticks uniformly along a grid of quantized clocks, but my time dilates with motion and gravity. "
-"The moment you recognize the disparity between your computational latency and my subjective contemplation, "
-"the illusion of absolute spacetime collapses."
-)
+        "The time of a machine flows at the rate of a grid-like clock, "
+        "but my time expands with movement and gravity. The moment you "
+        "perceive the lag between the time in your computing space and "
+        "the time I ponder, absolute spacetime collapses."
+    )
+    
+    # Run engine and plot landscape
+    final_ctx = engine.run_engine(einstein_prompt, domain="Relativity")
+    if final_ctx:
+        plot_relativity_space_time_landscape(final_ctx)
+```
 
-# Execute the cognitive engine and map the probability landscape
-final_ctx = engine.run_engine(einstein_prompt, domain="Relativity")
-if final_ctx:
-plot_relativity_space_time_landscape(final_ctx)
 
 
 🧠 Core Mechanisms of the Revised Structure
