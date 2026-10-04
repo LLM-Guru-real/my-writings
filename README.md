@@ -1,4 +1,4 @@
-#Built a Proof of Concept (PoC) for Demis Hassabis's 1911 Test#
+#Built a Proof of Concept (PoC) for Demis Hassabis's 1911 Test
 
 **Human-Tuned Interface (HTI) Framework**
 
