@@ -1,4 +1,5 @@
-`1911 Einstein Test Code script.py`
+> 1911 Einstein Test Code script
+> 
 > 💡 For a detailed explanation and step-by-step tutorial, please check out my Medium Article. https://medium.com/@yungzan/a-poc-for-hassabiss-1911-einstein-test-shattering-the-transformer-sycophancy-loop-747e28fc5b72
 
 ```python
