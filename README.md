@@ -453,6 +453,6 @@ if final_ctx and final_ctx.llm_parameters["ready_for_inference"]:
 
 #### Relativity Hypothesis Horizon
 <p align="center">
-  <img src="images/relativity_graph.png" alt="Relativity Hypothesis Horizon" width="100%">
+  <img src=["images/relativity_graph.png"](https://github.com/LLM-Guru-real/my-writings/blob/main/kikiki.png) alt="Relativity Hypothesis Horizon" width="100%">
 </p>
 ```
