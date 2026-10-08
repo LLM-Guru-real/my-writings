@@ -1,4 +1,4 @@
-import time
+```import time
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import gaussian_kde
@@ -423,7 +423,7 @@ final_ctx = engine.run_engine(einstein_prompt, domain="Relativity")
 if final_ctx and final_ctx.llm_parameters["ready_for_inference"]:
         plot_relativity_space_time_landscape(final_ctx)
 
-  ⚙️ [Profile Registered] 'Relativity' domain has been successfully loaded into the system.
+```  ⚙️ [Profile Registered] 'Relativity' domain has been successfully loaded into the system.
 ⚙️ [Profile Registered] 'Relativity' domain has been successfully loaded into the system.
 
 ==================== [Execution Mode: Relativity] ====================
