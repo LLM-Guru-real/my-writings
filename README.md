@@ -450,3 +450,9 @@ if final_ctx and final_ctx.llm_parameters["ready_for_inference"]:
 
 📊 [Spacetime Continuum] Visualizing paradigm shift convergence density...
 ```
+
+#### Relativity Hypothesis Horizon
+<p align="center">
+  <img src="images/relativity_graph.png" alt="Relativity Hypothesis Horizon" width="100%">
+</p>
+```
